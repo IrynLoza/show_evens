@@ -16,6 +16,13 @@ For example::
 
 def show_evens(nums):
     """Given list of ints, return list of *indices* of even numbers in list."""
+    result = []
+    
+    for num in nums:
+        if num%2 == 0:
+            result.append(nums.index(num))
+    return result        
+
 
 
 if __name__ == '__main__':
